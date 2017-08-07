@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0; padding: 0;}
+		#wrapper{
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+		#wrap{
+			position: relative;
+			width: 1050px;
+			height: 500px;
+			/*background: #00ccff;*/
+			margin: 130px auto 0;
+		}
+		#wrap .login{
+			/*float: right;*/
+			 margin: auto;
+			 margin-right: 0;
+			width: 400px;
+			height: 500px;
+			background: #fff;
+		}
+		a{ text-decoration: none;
+		color:  }
+		#wrap .login .header{
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			font-size: 25px;
+			color: #999;
+		}
+		#wrap .login .header a.active{color: #ff9999;}
+		#wrap .login form .text{
+			display: block;
+			width: 310px;
+			height: 22px;
+			padding: 13px 16px 13px 14px;
+			margin: 10px auto;
+
+		}
+		#wrap .login form .submit{
+			display: block;
+			width: 310px;
+			height: 50px;
+			color: #fff;
+			background: #ffcc00;
+			margin: 10px auto;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<iframe width="100%" height="868px" frameborder="0" scrolling="no" src="https://s1.mi.com/loginbanner.html"></iframe>
+</div>
+<div id="wrap">
+	<div class="login">
+		<div class="header">
+			<a href="" class="active">账号登录</a>
+			<span>|</span>
+			<a href="">扫码登录</a>
+		</div>
+		<form action="file:///E:/js/imoocPractice/8.3.html" method="post">
+			<input type="text" name="user" class="text"  placeholder="用户名" />
+			<input type="password" name="password" class="text"  placeholder="密码" />
+			<input type="submit" value="立即登录" class="submit">
+		</form>
+		<fieldset style="border: 0; border-top: 1px solid #999;  margin: 50px auto; ">
+			<legend align="center">其他方式登录</legend>
+		</fieldset>
+	</div>
+</div>
+</body>
+</html>
