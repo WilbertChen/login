@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./testoo.css">
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+var Wrapper=React.createClass({
+	render: function(){
+		return(
+			<div id="wrapper">
+				<iframe width='100%' height='868px' frameborder="0" scrolling="no" src="https://s1.mi.com/loginbanner.html"></iframe>
+			</div>
+		)
+	}
+});
+var Header=React.createClass({
+		render: function(){
+			return(
+					<div className="header">
+						<a href="" className="active">账号登录</a>
+						<span>|</span>
+						<a href="">扫码登录</a>
+					</div>
+			)
+		}
+	});
+	var Form=React.createClass({
+		render: function(){
+			return(
+					<form>
+						<input type="text" name="user" className="text"  placeholder="用户名" />
+						<input type="password" name="password" className="text"  placeholder="密码" />
+						<input type="submit" value="立即登录" className="submit" />
+					</form>
+			)
+		}
+	});
+	var Fieldset=React.createClass({
+		render: function(){
+			return(
+					<fieldset>
+						<legend align="center">其他方式登录</legend>
+					</fieldset>
+			)
+		}
+	});
+var Wrap=React.createClass({
+	render: function(){
+		return(
+			<div id="wrap">
+				<div className="login">
+					<Header />
+					<Form />
+					<Fieldset />
+				</div>
+			</div>
+		)
+	}
+
+});
+var Index=React.createClass({
+	render: function(){
+		return(
+			<div>
+				<Wrapper />
+				<Wrap />
+			</div>
+		)
+	}
+});
+	
+ReactDOM.render(
+	<Index />
+	,
+	document.getElementById('example')
+	);
+</script>
+</body>
+</html>

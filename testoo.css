@@ -1,0 +1,60 @@
+*{margin: 0; padding: 0;}
+		#wrapper{
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+		iframe{
+			width: 100%;
+			height:"868px";
+		}
+		#wrap{
+			position: relative;
+			width: 1050px;
+			height: 500px;
+			/*background: #00ccff;*/
+			margin: 130px auto 0;
+		}
+		#wrap .login{
+			/*float: right;*/
+			 margin: auto;
+			 margin-right: 0;
+			width: 400px;
+			height: 500px;
+			background: #fff;
+		}
+		a{ text-decoration: none;
+		color:  }
+		.header{
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			font-size: 25px;
+			color: #999;
+		}
+		a.active{color: #ff9999;}
+		form .text{
+			display: block;
+			width: 310px;
+			height: 22px;
+			padding: 13px 16px 13px 14px;
+			margin: 10px auto;
+
+		}
+		form .submit{
+			display: block;
+			width: 310px;
+			height: 50px;
+			color: #fff;
+			background: #ffcc00;
+			margin: 10px auto;
+			border: 0;
+		}
+		fieldset{
+			border: 0; 
+			border-top: 1px solid #999; 
+			margin: 50px auto;
+		}
+		legend{
+			text-align: center;
+		}
